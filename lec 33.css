@@ -1,0 +1,713 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kapakana:wght@300..400&family=Open+Sans:ital,wdth,wght@0,84.7,300;1,84.7,300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Inter',sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    margin: 0 auto;
+    
+
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 4rem;
+
+   
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: chartreuse; */
+    height: 70%;
+    width: 65%;
+}
+a span{
+    font-weight: 700;
+    font-size:  medium;
+    color: rgb(44, 44, 44)
+}
+.button{
+    width: 4.45rem;
+    height: 1.6rem;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #694fff;
+
+}
+.button:hover{
+    background-color: #4929ff;
+}
+a p{
+    color: rgb(255, 255, 255);
+    font-size: x-small;
+    font-weight: 600;
+    
+    
+}
+nav a{
+    /* display: none; */
+    display: flex;
+    padding: 7px;
+    font-size: .7rem;
+    color: rgb(108, 108, 108);
+    font-weight: bold;
+    /* transform: color 5s; */
+    
+}
+nav a:hover{
+    color: #694fff;
+}
+nav{
+    display: flex;
+}
+/* @media screen and (min-width:728px){
+    nav{
+        display: flex;
+    }
+} */
+.header-content img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding:0.4rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 7.2rem;
+    
+}
+
+    /* padding: 1.2rem 2rem; */
+/* above line me 1.2rem left and right and 2rem top  or bottom ke liye padding hai  */
+/* margin ki jagah gap add kr liya kro kbhi kab */
+/* sir ne kuchh pehle se decide color and font and bg color etc thing add kr li thi pehli hai bad me unka hi naam paste krte gaye the */
+/* sir rem bahut use krte hai */
+/* sir ne puri body ko hi starting me leke text align kr diya tha padding ke sath */
+/* ṭhoda sa reseach kro top left right bottom ke margin ke upar */
+/* inka sysntax kaise likhte hai */
+/* imp margin: 0 auto; ka matlab hota hia top and bottom ki margin ko 0 kr do or isko horizontally centre ke align kr dena */
+/* apn ne yha header-container and header content ho banaya tha uski jagah par sir ne 
+yhan max width ka use krke left and right space ko bada diya yani apn ne jaise 
+ek div use kiya tha content ko limit krne ke liye*/
+/* sir ne yhan use kiya hai nav link ke liye "transform: color 0.1s; */
+/* or ek dusry styling me nav-link:hover{ */
+    /* color:blue" */
+    /* padding likhne ka ek tarika or 
+    padding: 3rem 2.3rem; */
+/* upar ke tarike me top and bottom ke liye padding 3 hai or left and right ke liye paddin 2.3 rem hai */
+/* ye media query wali chize ke bar samjh kr fir se ye video dhek lena media query ke liye */
+/* ek 3 dot or 3 bar jaise chiz hm dekhte hai aksar use hamburger kehte hai */
+/* sir ne yhan chhote screen ke liye usi hamburger img ka use kiya hai */
+/* sdeudo visible and sdeudo focus ka use kr sakte hai sir ne bola tha abhi check ke lo
+ */
+.main
+{   display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+
+}
+.mainsection{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    width: 65%;
+}
+#mainimage{
+    width: 20rem;   
+    height: 20rem;
+    border-radius: 1rem;
+}
+.leftcontent{
+
+    /* background-color: #beff93; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+
+}
+.leftcontent p{
+    display: flex;
+    justify-content: start;
+    
+}
+
+#startbutton{
+    color: white;
+    width: 2.5rem;
+    height: .5rem;
+    background-color: #694fff;
+    padding: .3rem .6rem;
+    border-radius: .2rem;
+    font-size: small;
+    margin-right: 0.3rem;
+    font-weight: 500;
+    
+    
+
+}
+#endbutton{
+    color: white;
+    width: 2.5rem;
+    height: .5rem;
+    background-color: #4e4e4e;
+    padding: .3rem .6rem;
+    border-radius: .2rem;
+    font-size: small;
+    font-weight: 500;
+    
+}
+.buttongroup{
+    
+    width: 50%;
+    height: 10%;
+    padding: 0px;
+    text-align: start;
+    
+}
+h1{
+    font-size: 2.65rem;
+    text-align: start;
+    
+}
+#leftcontentheadingpara{
+    font-weight: 700;
+    color: #694fff;
+    font-size: 0.8rem;
+
+}
+#main-description{
+    padding: 0;
+    text-align: start;
+}
+@media screen and (max-width:800px) {
+    .leftcontent{
+        gap: 0.5rem;
+        height: 15rem;
+        
+    }
+    .buttongroup{
+        flex-direction: column;
+        justify-content: center;
+        align-items: cener;
+        width: 15rem;
+        height: 8rem;
+    
+    }
+    .mainsection{
+        flex-direction: column;
+        gap: .1rem;
+    }
+    
+    
+}
+
+.company-box{
+    
+    background-color: rgb(238, 238, 238);
+    width: 40%;
+    padding:0.8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.3rem;
+    
+}
+.company-container p{
+    font-size: larger;
+    font-weight: 750;
+    color: #272727;
+    margin: 1.2rem;
+    /* background-color: black; */
+    
+}
+.leftcontent{
+    animation: slidefromleft 0.5s ease forwards;
+    opacity: 0;
+}
+@keyframes slidefromleft{
+    0%{
+        opacity: 0%;
+        transform: translateX(-100%);
+
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0);
+
+    }
+} 
+#google{
+    width: 1.8rem;
+    height: 1.8rem;
+    
+}
+#microsoft{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.28rem;
+    
+
+}
+#linkedin{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.28rem;
+
+}
+#twitter{
+    width: 1.32rem;
+    height: 1.25rem;
+    border-radius: 2rem 2rem;
+    margin-right: 0.2rem;
+}
+.company-logo span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+    padding-left:0.1rem;
+  
+}
+.company-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.company-container{
+    padding-bottom: 2rem;
+    animation: slidefromleft 0.5s ease forwards;
+    opacity: 0;
+}
+@keyframes slidefromleft{
+    0%{
+        opacity: 0%;
+        transform: translateX(-100%);
+
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0);
+
+    }
+}
+@media screen and (max-width:760px){
+    .company-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .company-logo{
+        padding: 1.4rem;
+    }
+}
+.advantages{
+   
+    background-color: #ececec;
+    margin: 2rem 5px 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    
+    
+
+}
+.features{
+    width: 45%;
+
+    
+}
+.mainhead{
+    width: 100%;
+    margin: 2rem 1rem 0.2rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+#card-icon1,#card-icon4,#card-icon5{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    
+}
+#card-icon1{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 2rem;
+  
+}
+#card-icon3{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 2rem;
+    border: 2px solid #499bff ;
+
+}
+#card-icon2{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 1.5rem;
+
+}
+#card-icon6{
+    width: 3.3rem;
+    height: 3rem;
+    border-radius: 1.8rem;
+    border: 0.5rem solid #934fff;
+    
+
+}
+.cardsection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.8rem;
+    margin-top: 3rem;
+
+}
+.card:nth-child(1){
+    background: #e4a905;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+
+}
+.card:nth-child(2){
+    background: #ff59ba;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.card:nth-child(3){
+    background: #499bff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.card:nth-child(4){
+    background: #ff6741;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.card:nth-child(5){
+    background: #1fff3d;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.card:nth-child(6){
+    background: #934fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.card{
+    padding: 5rem;
+}
+.card p{
+    color: white;
+}
+#cardtitle-para{
+    font-weight: 700;
+
+}
+#card-desc{
+    font-size: small;
+}
+.mainhead p{
+    color: rgb(91, 91, 91);
+}
+@media screen and (max-width:600px){
+    .cardsection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     
+        
+    }
+    .features{
+           width:100%;
+
+    }
+
+}
+.feedback-content{
+    /* display: flex; */
+    /* justify-content: center; */
+    max-width: 62.2%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 1em;
+}
+#comment-person{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+}
+.review-box{
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 0.4rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; 
+}
+.review-box:hover{
+    transform: scale(1.04);
+    transition-duration: 0.2ms;
+    
+
+
+}
+.title-feedback{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+#review-desc{
+    color: rgb(71, 71, 71);
+    font-size: small;
+
+
+}
+#comment-person-name{
+    font-size: .9rem;
+    color:#0353ff;
+    font-weight: 600;
+}
+#comment-person-detail{
+    font-size: small;
+    color: #565656;
+}
+.person-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.signup-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #e0e0e0;
+    max-width: 60%;
+    margin: 2rem auto;
+    border-radius: 0.3rem;
+    
+
+}
+#signupdiv-img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    
+    
+}
+.rightcontent-signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    border-radius: 0.5rem;
+}
+#newsletter-signup{
+    font-size: .7rem;
+    color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: start;
+    
+    
+}
+#term-service-para{
+    font-size: .55rem;
+    color: rgb(35, 35, 35);
+
+}
+.term-service{
+    display: flex;
+    justify-content: start;
+}
+#newsletter-heading{
+    color: #6749ff;
+    font-weight: 800;
+    font-size: 1.4rem;
+
+}
+.rightchildcontainer{
+    /* background: #595959; */
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;    
+    align-items: start;
+    
+}
+#send-button{
+    padding: .3rem;
+    background: #004cff;
+    color: white;
+    font-size: x-small;
+    border-radius: 0.15rem;
+    width:2.5rem;
+    margin-left: 0.5rem;
+    /* text-align: center; */
+    align-self: center;
+ 
+}
+#send-button a{
+    color: white;
+}
+#send-button:hover{
+    background: #0043d2;
+    
+}
+#emailinput{
+    height:1.5rem;
+    color: #f9f8f8;
+    width: 8rem;
+    border: none;
+    border: 0.1px solid rgb(167, 167, 167);
+    border-radius: 0.1rem;
+}
+#emailinput:hover{
+    transform: scale(1.01);
+
+}
+::placeholder{
+    color: #8d8d8d;
+    font-size:0.7rem;
+    font-weight: 650    ;
+}
+#mail-input-div{
+    display: flex;
+  
+    
+}
+.latest-update{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+    
+.logoimgf{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.footer-left-content{
+    /* background-color:rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.studysyncf{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-left: 0.4rem;
+
+}
+.footer-left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: start;
+    justify-content: start;
+    margin: 1.1rem;
+    /* background: #000; */
+}
+#footer-desc{
+    color: rgb(73, 73, 73);
+    font-size: 0.7rem;
+    font-weight: 400;
+
+}
+.footer-content{
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    justify-content: center;
+    
+    max-width: 70%;
+    /* background: #575050; */
+    
+}
+.footer-table td{
+    font-size: 0.70rem;
+    padding: 0.35rem 2.5rem;
+    text-align: left;
+    color: #444444;
+    font-weight: 400;
+    
+}
+.footer-table td a{
+    color: #444444;
+   
+    
+}
+.footer-table td:hover{
+    transform: scale(1.05);
+
+}
+.footer-table th{
+    padding: 1rem;
+    color: #272727;
+    font-size: 0.9rem;
+    font-weight:700;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+}
+
+    
+
+.copyright-container p{
+    font-size: x-small;
+    color: #474747;
+    margin: 1.7rem;
+
+}
+#logoimg-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
